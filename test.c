@@ -4,8 +4,8 @@ int main(void)
 {
 	while(1)
 	{
-		printf("teset \n");
-	
+		printf("github AutoCompile test \n");
+		sleep(1);
 	}
 
 }
