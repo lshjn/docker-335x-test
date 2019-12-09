@@ -9,7 +9,7 @@ RUN     wget https://github.com/lshjn/docker-335x-test/archive/master.zip &&\
         cd docker-335x-test-master &&\
         gcc -o test test.c
 #第二阶段，新建基于busybox的镜像，里面包括程序运行需要的必要环境
-FROM busybox@sha256:fe81fcea1790604cb78c3191507809fcaea34a7d81afeb71526ad8b138f81268
+FROM busybox@sha256:916020ef62f70c4a9f4cccfab67c0bd38ef96ff245ab394c9b9c8f4f26626420
 WORKDIR /work_test
 COPY --from=builder /work/docker-335x-test-master/test .
 CMD ["./test"]
